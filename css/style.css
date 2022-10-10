@@ -1,0 +1,50 @@
+#evenodd-input {
+  border-width: 4px;
+  border-color: blue;
+ }
+ 
+ .input-even {
+   border-style: double;
+ }
+ 
+ .input-odd {
+     border-style: dotted;
+ }
+ 
+ .feedback-even {
+     background-color: #FFF;
+     color: blue;
+ }
+ 
+ .feedback-odd {
+    background-color: blue;
+    color: #FFF;
+}
+
+ .input-odd.input-odd, .input-odd.input-odd:focus{
+    background: black;
+    color: white;
+    border-style: dotted;
+  }
+ 
+ 
+ .feedback-odd.feedback-even::before,
+ .input-even.input-odd::before {
+     color: red;
+     content: 'MISTAKE! YOU ARE NOT SUPPOSED TO HAVE BOTH ODD AND EVEN CLASSES AT THE SAME TIME';
+ }
+ 
+ #evenodd-feedback {
+     border: 2px solid black;
+     padding: 3px;
+     text-align: center;
+     margin-top: 6px;
+ }
+
+ #counter {
+    padding: 12px;
+    font-size: 3em;
+    font-weight: 700;
+    border: 2px solid black;
+    border-radius: 6px;
+ }
